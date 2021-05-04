@@ -34,7 +34,6 @@ namespace ClassTestApp
         {
             this.Color = color; 
             this.Age  = Age;
-            
         }
         public void Meow() { Console.WriteLine($"{this.Color}고양이{this.Name}, 야옹!"); }
 

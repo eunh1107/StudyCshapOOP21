@@ -18,7 +18,7 @@ namespace ClassTestApp
             kitty.Color = "하얀 ";
             kitty.Meow();
 
-            Cat nero = new Cat(" 네로","검은 ");
+            Cat nero = new Cat(" 네로", "검은 ");
             /*{
                 Name = " 네로",
                 Age = 12,
@@ -35,17 +35,16 @@ namespace ClassTestApp
 
             Cat noname = new Cat(" 야옹이", "은색 ", 10);
             //noname.Name = " 야옹이";
-            noname.Meow(); 
+            noname.Meow();
             noname.Sleep();
 
-            var list = (First : "Cat", Second : "Dog", Third : "Pig", 55);
+            var list = (First: "Cat", Second: "Dog", Third: "Pig", 55);
             Console.Write($"튜플 첫번째 : {list.First} /");
             Console.Write($" 튜플 두번째 : {list.Second} /");
             Console.Write($" 튜플 세번째 : {list.Third} /");
             Console.WriteLine($" 튜플 네번째 : {list.Item4}");
 
             Console.WriteLine("==============================================================================");
-
         }
     }
 }
