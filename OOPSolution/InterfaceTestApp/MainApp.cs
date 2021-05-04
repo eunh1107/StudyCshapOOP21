@@ -14,7 +14,7 @@ namespace InterfaceTestApp
             loogger.WriteError("에러메시지!!!!");
 
             ILogger logger2 = new ClimateLogger();
-            logger2.WriteLog("흐림//");
+            logger2.WriteLog("흐림~");
             //logger2.WriteError("!!!!"); //실행오류(예외발생)
 
             ILogger clmLogger = new FileLogger();  //ver 1.0 ClimateLogger -> 1.2 FileLogger 변경
