@@ -5,7 +5,7 @@ using System.Net.Http.Headers;
 
 namespace ArrayClassTestAPP
 {
-    class Program
+    class MainApp
     {
         static void Main(string[] args)
         {

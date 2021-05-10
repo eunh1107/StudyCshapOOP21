@@ -17,7 +17,7 @@ namespace PropertyTestApp
 
         public int Age
         {
-            get
+            get //람다식으로 하면 get=>this.age;
             {
                 return this.age;
             }
