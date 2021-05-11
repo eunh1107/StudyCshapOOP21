@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace EventHandlerCheckApp
 {
     partial class MainForm
@@ -53,7 +55,7 @@ namespace EventHandlerCheckApp
             this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // TxtUserID
             // 
@@ -61,7 +63,7 @@ namespace EventHandlerCheckApp
             this.TxtUserID.Name = "TxtUserID";
             this.TxtUserID.Size = new System.Drawing.Size(142, 27);
             this.TxtUserID.TabIndex = 2;
-            this.TxtUserID.TextChanged += new System.EventHandler(this.TextUerID_TextChanged);
+            //this.TxtUserID.TextChanged += new System.EventHandler(this.TextUerID_TextChanged);
             // 
             // TxtPassword
             // 
@@ -70,7 +72,7 @@ namespace EventHandlerCheckApp
             this.TxtPassword.PasswordChar = '●';
             this.TxtPassword.Size = new System.Drawing.Size(142, 27);
             this.TxtPassword.TabIndex = 3;
-            this.TxtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
+            //this.TxtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
             // 
             // BtnLogin
             // 
@@ -94,11 +96,16 @@ namespace EventHandlerCheckApp
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "이벤트확인 앱";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
